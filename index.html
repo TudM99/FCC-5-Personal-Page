@@ -1,5 +1,153 @@
 <!DOCTYPE html>
 <html>
+<style>
+.nav {
+  font-family:monospace;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  box-shadow: 0 2px 0 grey;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 5px;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: auto;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.nav-list a:hover {
+  background: red;
+}
+
+
+
+html {
+  box-sizing: border-box;
+
+ 
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+
+.welcomemessage{
+color: white;
+background-color: black;
+height: 100vh;
+margin: auto;
+font-family: monospace;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.aligntext{
+  
+}
+h1{
+font-size: 25px;
+}
+h2{
+font-size: 18px;
+}
+
+a:link{
+  text-decoration: none!important;
+}
+.Projects{
+background-color: #333333;
+color: black;
+height: 60vh;
+font-family: monospace;
+font-size:25px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align:center;
+
+}
+</style>
+<head><title>Nameless</title></header>
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section" style="color:white; text-decoration:none">About</a>
+    </li>
+    <li>
+      <a href="#projects" style="color:white; text-decoration:none">Work</a>
+    </li>
+    <li>
+      <a href="#contact" style="color:white; text-decoration:none">Contact</a>
+    </li>
+  </ul>
+</nav>
+<section id="welcome-section" class="welcome-section">
+<div class="welcomemessage">
+<div class="aligntext">
+<h1>Hey, I'm nameless, and haven't done any relevant work.</h1>
+<h2>Welcome to my website.</h2>
+</div>
+</div>
+</section>
+
+
+<section id="projects" class="Projects">
+
+<a href="https://invalidproject.com/" target="_blank" id="project-title" style="color: black;">Invalid Project</a>
+</section>
+
 
 
 </html>
